@@ -1,0 +1,48 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:types/brxmhelloworld:newsdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        brxmhelloworld:author: Author
+        brxmhelloworld:content: Content
+        brxmhelloworld:date: Date
+        brxmhelloworld:image: Image
+        brxmhelloworld:introduction: Introduction
+        brxmhelloworld:location: Location
+        brxmhelloworld:source: Source
+        brxmhelloworld:title: Title
+        jcr:name: News Item
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        brxmhelloworld:author: Auteur
+        brxmhelloworld:content: Inhoud
+        brxmhelloworld:date: Datum
+        brxmhelloworld:image: Afbeelding
+        brxmhelloworld:introduction: Introductie
+        brxmhelloworld:location: Locatie
+        brxmhelloworld:source: Bron
+        brxmhelloworld:title: Titel
+        jcr:name: Nieuwsbericht
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        brxmhelloworld:author: Verfasser
+        brxmhelloworld:content: Inhalt
+        brxmhelloworld:date: Datum
+        brxmhelloworld:image: Abbildung
+        brxmhelloworld:introduction: Einführung
+        brxmhelloworld:location: Standort
+        brxmhelloworld:source: Quelle
+        brxmhelloworld:title: Titel
+        jcr:name: News
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        brxmhelloworld:author: Auteur
+        brxmhelloworld:content: Contenu
+        brxmhelloworld:date: Date
+        brxmhelloworld:image: Image
+        brxmhelloworld:introduction: Introduction
+        brxmhelloworld:location: Lieu
+        brxmhelloworld:source: Source
+        brxmhelloworld:title: Titre
+        jcr:name: Message d'info

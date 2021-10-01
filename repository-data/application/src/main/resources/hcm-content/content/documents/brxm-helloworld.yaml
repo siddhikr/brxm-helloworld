@@ -1,6 +1,8 @@
 /content/documents/brxmhelloworld:
+  .meta:order-before: administration
   jcr:primaryType: hippostd:folder
   jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: 2b4fc6d0-79f3-4714-9ee8-a35764faab3a
   hippo:name: brxm-helloworld
   hippostd:foldertype: [new-translated-folder, new-document]
   hippotranslation:id: 996bcac5-86cf-49b5-a7a3-16a74863e814

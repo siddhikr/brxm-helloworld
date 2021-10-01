@@ -1,0 +1,222 @@
+/content/documents/brxmhelloworld/news:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: 07b98ccc-3d4a-4a96-8d17-ef5c7c20a68a
+  hippostd:foldertype: [new-news-document, new-news-folder]
+  hippotranslation:id: f6201261-e463-471d-9d74-063040085b4f
+  hippotranslation:locale: en
+  /2021:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+    jcr:uuid: da824ce4-a9e9-4090-8907-97e1e94c0faf
+    hippostd:foldertype: [new-news-document, new-news-folder]
+    hippotranslation:id: ece7c73f-9bea-4522-868e-0df17abd38fa
+    hippotranslation:locale: en
+    /10:
+      jcr:primaryType: hippostd:folder
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+      jcr:uuid: db13bbd4-1ec5-46c1-a07e-a5ab4c274bcb
+      hippostd:foldertype: [new-news-document, new-news-folder]
+      hippotranslation:id: c72e8a02-1d46-457a-a75e-931cbc8925ef
+      hippotranslation:locale: en
+      /the-medusa-news:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:uuid: c580ac64-3874-4717-a6d9-e5ad72080abe
+        hippo:name: The medusa news
+        /the-medusa-news:
+          jcr:primaryType: brxmhelloworld:newsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: 99744c7d-a349-4538-b446-368aaa4a7985
+          brxmhelloworld:author: Alfred Anonymous
+          brxmhelloworld:date: 2021-10-01T13:35:00-07:00
+          brxmhelloworld:documenttype: news
+          brxmhelloworld:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          brxmhelloworld:location: Rotterdam
+          brxmhelloworld:source: ''
+          brxmhelloworld:title: The medusa news
+          hippo:availability: [live, preview]
+          hippostd:holder: admin
+          hippostd:state: published
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T13:03:00+01:00
+          hippostdpubwf:lastModificationDate: 2013-11-12T13:04:00+01:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippostdpubwf:publicationDate: 2013-11-12T13:04:00+01:00
+          hippotranslation:id: 122d609b-7a19-4ff1-8fe2-b160f6902e12
+          hippotranslation:locale: en
+          /brxmhelloworld:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <html>
+                        <body>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+
+                        </body>
+                        </html>
+          /brxmhelloworld:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 4709f797-61ae-4c36-93d4-63b5d50fc200
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /2013-harvest:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:uuid: 30092f4e-2ef7-4c72-86a5-8ce895908937
+        hippo:name: 2013 harvest
+        /2013-harvest:
+          jcr:primaryType: brxmhelloworld:newsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: 56d349dc-bb10-4177-80bb-75d24ad8d8f4
+          brxmhelloworld:author: Alfred Anonymous
+          brxmhelloworld:date: 2021-10-01T13:35:00-07:00
+          brxmhelloworld:documenttype: news
+          brxmhelloworld:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          brxmhelloworld:location: Rome
+          brxmhelloworld:source: ''
+          brxmhelloworld:title: 2013 harvest
+          hippo:availability: [live, preview]
+          hippostd:holder: admin
+          hippostd:state: published
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T14:31:00+01:00
+          hippostdpubwf:lastModificationDate: 2013-11-12T14:31:00+01:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippostdpubwf:publicationDate: 2013-11-12T14:31:00+01:00
+          hippotranslation:id: 7dc80112-91cd-4e8c-9f08-2e703b8365a8
+          hippotranslation:locale: en
+          /brxmhelloworld:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <html>
+                        <body>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+
+                        </body>
+                        </html>
+          /brxmhelloworld:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: beff458e-e07a-4065-8cad-8d96b67d13ec
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /the-gastropoda-news:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:uuid: aeda2bcd-b21d-4ead-a2e6-c64a2ca051c8
+        hippo:name: The gastropoda news
+        /the-gastropoda-news:
+          jcr:primaryType: brxmhelloworld:newsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: 6368040b-a8b1-4fc6-a595-12bd0e674108
+          brxmhelloworld:author: Alfred Anonymous
+          brxmhelloworld:date: 2021-10-01T13:35:00-07:00
+          brxmhelloworld:documenttype: news
+          brxmhelloworld:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          brxmhelloworld:location: Liverpool
+          brxmhelloworld:source: ''
+          brxmhelloworld:title: The gastropoda news
+          hippo:availability: [live, preview]
+          hippostd:holder: admin
+          hippostd:state: published
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T12:50:00+01:00
+          hippostdpubwf:lastModificationDate: 2013-11-12T12:52:00+01:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippostdpubwf:publicationDate: 2013-11-12T12:52:00+01:00
+          hippotranslation:id: 319b92e8-3bd8-4165-b733-d90d30e5fcb4
+          hippotranslation:locale: en
+          /brxmhelloworld:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <html>
+                        <body>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+
+                        </body>
+                        </html>
+          /brxmhelloworld:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
