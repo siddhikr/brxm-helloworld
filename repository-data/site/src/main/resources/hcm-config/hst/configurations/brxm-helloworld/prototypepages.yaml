@@ -1,0 +1,4 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/brxmhelloworld/hst:prototypepages:
+      jcr:primaryType: hst:pages

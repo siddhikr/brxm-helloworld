@@ -1,0 +1,6 @@
+site: brxm-helloworld
+group: brxm-helloworld
+project: brxm-helloworld
+module:
+  name: brxm-helloworld-repository-data-site-development
+  after: brxm-helloworld-repository-data-site
