@@ -1,2 +1,2 @@
 # brxm-helloworld
-BloomReach Trial project for learning purposes
+Bloomreach Trial project for learning purposes
