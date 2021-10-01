@@ -3,3 +3,4 @@ definitions:
     /hippo:namespaces/brxmhelloworld:
       jcr:primaryType: hipposysedit:namespace
       jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 958d9191-5942-4df7-86b5-0fede17c7629

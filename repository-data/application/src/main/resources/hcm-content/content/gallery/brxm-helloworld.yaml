@@ -1,7 +1,7 @@
 /content/gallery/brxmhelloworld:
   jcr:primaryType: hippogallery:stdImageGallery
   jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: d6fc2aa9-9208-4b43-8f8a-b82e1ec45989
   hippo:name: brxm-helloworld
   hippostd:foldertype: [new-image-folder]
   hippostd:gallerytype: ['hippogallery:imageset']
-
