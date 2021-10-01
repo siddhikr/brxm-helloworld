@@ -1,0 +1,5 @@
+group: 
+  name: brxm-helloworld
+project: brxm-helloworld
+module:
+  name: brxm-helloworld-repository-data-webfiles

@@ -1,0 +1,6 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/brxmhelloworld/hst:catalog:
+      jcr:primaryType: hst:catalog
+      /brxmhelloworld-catalog:
+        jcr:primaryType: hst:containeritempackage

@@ -1,0 +1,6 @@
+group:
+  name: brxm-helloworld
+  after: hippo-cms
+project: brxm-helloworld
+module:
+  name: brxm-helloworld-repository-data-application

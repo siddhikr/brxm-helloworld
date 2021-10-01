@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+  <projectNamespace>brxmhelloworld</projectNamespace>
+  <confirmParams>false</confirmParams>
+  <selectedProjectPackage>com.example.learning.brxm</selectedProjectPackage>
+  <selectedBeansPackage>com.example.learning.brxm.beans</selectedBeansPackage>
+  <selectedComponentsPackage>com.example.learning.brxm.components</selectedComponentsPackage>
+  <selectedRestPackage>com.example.learning.brxm.rest</selectedRestPackage>
+  <hstRoot>/hst:brxmhelloworld</hstRoot>
+  <webfileBundleName>site</webfileBundleName>
+  <setupDone>false</setupDone>
+  <useSamples>true</useSamples>
+  <extraTemplates>true</extraTemplates>
+</project>
