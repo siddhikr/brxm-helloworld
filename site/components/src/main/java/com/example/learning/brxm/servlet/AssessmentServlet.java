@@ -30,9 +30,9 @@ public class AssessmentServlet extends HttpServlet {
             long t0 = System.currentTimeMillis();
             iterateThroughTheJCRTreeUsingGetNodes(documentsNode);
             log.info("Time taken by iterateThroughTheJCRTreeUsingGetNodes:"+ (System.currentTimeMillis() - t0));
-            String xpath = "/jcr:root/content";
-            String xpathForOrderByName = "/jcr:root/content//* order by @jcr:name";
-            String xpathForOrderByScore = "/jcr:root/content//* order by @jcr:score";
+            //String xpath = "/jcr:root/content/documents";
+            String xpathForOrderByName = "/jcr:root/content/documents//* order by @jcr:name";
+            String xpathForOrderByScore = "/jcr:root/content/documents//* order by @jcr:score";
             long t1 = System.currentTimeMillis();
             iterateThroughTheJCRTreeUsingQuery(xpathForOrderByName, session);
             log.info("Time taken by iterateThroughTheJCRTreeUsingQuery for xpathForOrderByName:"+ (System.currentTimeMillis() - t1));
