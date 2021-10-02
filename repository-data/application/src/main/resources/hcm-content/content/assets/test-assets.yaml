@@ -1,0 +1,6 @@
+/content/assets/test-assets:
+  jcr:primaryType: hippogallery:stdAssetGallery
+  jcr:mixinTypes: ['mix:versionable']
+  jcr:uuid: 95becadc-8268-4864-8c67-a5dd5044d9ba
+  hippostd:foldertype: [new-file-folder]
+  hippostd:gallerytype: ['hippogallery:exampleAssetSet']

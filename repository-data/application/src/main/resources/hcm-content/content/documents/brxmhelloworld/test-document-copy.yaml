@@ -1,0 +1,100 @@
+/content/documents/brxmhelloworld/test-document-copy:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: f24b62b3-b029-4d78-af95-ba1585c226c9
+  hippo:name: test-document (copy)
+  hippo:versionHistory: 4dff14fe-8b85-47ec-8449-1875fda05e00
+  /test-document-copy[1]:
+    jcr:primaryType: brxmhelloworld:newsdocument
+    jcr:mixinTypes: ['mix:versionable']
+    jcr:uuid: 3a43cc10-2e24-48fc-affc-718cab455812
+    brxmhelloworld:author: ''
+    brxmhelloworld:date: 2021-10-01T20:16:00-07:00
+    brxmhelloworld:documenttype: news
+    brxmhelloworld:introduction: this is test content intro copied and changed only
+      intro
+    brxmhelloworld:location: ''
+    brxmhelloworld:source: ''
+    brxmhelloworld:title: test document
+    hippo:availability: [preview]
+    hippo:related___pathreference: []
+    hippostd:retainable: false
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-10-01T20:16:19.843-07:00
+    hippostdpubwf:lastModificationDate: 2021-10-01T20:23:18.494-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippotranslation:id: 240fe6af-a0aa-457f-bcc1-94af3ebff370
+    hippotranslation:locale: en
+    /brxmhelloworld:content:
+      jcr:primaryType: hippostd:html
+      hippostd:content: <p>here is the actual content text</p>
+    /brxmhelloworld:image:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []
+  /test-document-copy[2]:
+    jcr:primaryType: brxmhelloworld:newsdocument
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: c47d77cb-ca7a-4bc2-98f3-551e22bb80eb
+    brxmhelloworld:author: ''
+    brxmhelloworld:date: 2021-10-01T20:16:00-07:00
+    brxmhelloworld:documenttype: news
+    brxmhelloworld:introduction: this is test content intro copied and changed only
+      intro
+    brxmhelloworld:location: ''
+    brxmhelloworld:source: ''
+    brxmhelloworld:title: test document
+    hippo:availability: []
+    hippo:related___pathreference: []
+    hippostd:retainable: false
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-10-01T20:16:19.843-07:00
+    hippostdpubwf:lastModificationDate: 2021-10-01T20:23:08.464-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippotranslation:id: 240fe6af-a0aa-457f-bcc1-94af3ebff370
+    hippotranslation:locale: en
+    /brxmhelloworld:content:
+      jcr:primaryType: hippostd:html
+      hippostd:content: <p>here is the actual content text</p>
+    /brxmhelloworld:image:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []
+  /test-document-copy[3]:
+    jcr:primaryType: brxmhelloworld:newsdocument
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 5862e3cc-c5fa-47c7-ae9c-adcfbc1801f6
+    brxmhelloworld:author: ''
+    brxmhelloworld:date: 2021-10-01T20:16:00-07:00
+    brxmhelloworld:documenttype: news
+    brxmhelloworld:introduction: this is test content intro copied and changed only
+      intro
+    brxmhelloworld:location: ''
+    brxmhelloworld:source: ''
+    brxmhelloworld:title: test document
+    hippo:availability: [live]
+    hippo:related___pathreference: []
+    hippostd:retainable: false
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-10-01T20:16:19.843-07:00
+    hippostdpubwf:lastModificationDate: 2021-10-01T20:23:18.494-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2021-10-01T20:23:22.634-07:00
+    hippotranslation:id: 240fe6af-a0aa-457f-bcc1-94af3ebff370
+    hippotranslation:locale: en
+    /brxmhelloworld:content:
+      jcr:primaryType: hippostd:html
+      hippostd:content: <p>here is the actual content text</p>
+    /brxmhelloworld:image:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []

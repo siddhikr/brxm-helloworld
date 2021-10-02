@@ -10,3 +10,6 @@
 [brxmhelloworld:newsdocument] > brxmhelloworld:basedocument, hippostd:relaxed, hippotranslation:translated
   orderable
 
+[brxmhelloworld:FlashNews] > brxmhelloworld:newsdocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+

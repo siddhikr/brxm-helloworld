@@ -1,0 +1,16 @@
+/content/assets/test-assets/screen-shot-2021-10-01-at-8.25.53-pm.png:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 74c23dc2-2771-4461-a724-34eb29e3caf7
+  hippo:name: Screen Shot 2021-10-01 at 8.25.53 PM.png
+  /screen-shot-2021-10-01-at-8.25.53-pm.png:
+    jcr:primaryType: hippogallery:exampleAssetSet
+    hippo:availability: [live, preview]
+    /hippogallery:asset:
+      jcr:primaryType: hippo:resource
+      hippo:filename: Screen Shot 2021-10-01 at 8.25.53 PM.png
+      jcr:data:
+        type: binary
+        resource: /content/assets/test-assets/screen-shot-2021-10-01-at-8.25.53-pm.png/screen-shot-2021-10-01-at-8.25.53-pm.png/asset/Screen-Shot-2021-10-01-at-8.25.53-PM.png
+      jcr:lastModified: 2021-10-01T20:26:03.666-07:00
+      jcr:mimeType: image/png
