@@ -1,0 +1,28 @@
+/content/documents/brxmhelloworld/test-folder1:
+  .meta:order-before: test-document-copy
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: d4d1dadb-2ea1-4430-9175-9adf12aa6d80
+  hippo:name: test-folder1-renamed-now
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 8623b7d3-0026-477f-a0c4-6d26e920d8de
+  hippotranslation:locale: en
+  /test-content2:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 05f53094-f397-4137-a924-32c07e881682
+    /test-content2:
+      jcr:primaryType: selection:valuelist
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+      jcr:uuid: 4f69bef6-236f-4889-83f8-0995490b2f3f
+      hippo:availability: [live, preview]
+      hippotranslation:id: 23df4c51-b958-424e-bfab-504b3450cf33
+      hippotranslation:locale: en
+      /selection:listitem[1]:
+        jcr:primaryType: selection:listitem
+        selection:key: '0'
+        selection:label: Zero
+      /selection:listitem[2]:
+        jcr:primaryType: selection:listitem
+        selection:key: '1'
+        selection:label: One

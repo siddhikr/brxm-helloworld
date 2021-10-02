@@ -91,3 +91,31 @@
           resource: /content/gallery/brxmhelloworld/samples/snail-193611_640.jpg/snail-193611_640_original.jpg
         jcr:lastModified: 2013-11-12T12:13:00+01:00
         jcr:mimeType: image/jpeg
+  /test-rgb.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: afb4fc4c-cb92-4195-af5e-05a378926730
+    hippo:name: test-RGB.jpg
+    /test-rgb.jpg:
+      jcr:primaryType: hippogallery:imageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: test-RGB.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: test-RGB.jpg
+        hippogallery:height: 40
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/gallery/brxmhelloworld/samples/test-rgb.jpg/test-RGB_thumbnail.jpg
+        jcr:lastModified: 2021-10-01T20:29:09.253-07:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 659
+        hippogallery:width: 980
+        jcr:data:
+          type: binary
+          resource: /content/gallery/brxmhelloworld/samples/test-rgb.jpg/test-RGB_original.jpg
+        jcr:lastModified: 2021-10-01T20:29:09.253-07:00
+        jcr:mimeType: image/jpeg

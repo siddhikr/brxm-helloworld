@@ -1,0 +1,96 @@
+/content/documents/brxmhelloworld/test-document:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: 2553a924-b041-4f6c-91d9-48c42b612f25
+  hippo:versionHistory: 2bc6e0dd-8d35-4a1f-85d3-5237b76cf142
+  /test-document[1]:
+    jcr:primaryType: brxmhelloworld:newsdocument
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: c78f3d4e-5616-46ac-b49e-df5a70a247d3
+    brxmhelloworld:author: ''
+    brxmhelloworld:date: 2021-10-01T20:16:00-07:00
+    brxmhelloworld:documenttype: news
+    brxmhelloworld:introduction: this is test content intro
+    brxmhelloworld:location: ''
+    brxmhelloworld:source: ''
+    brxmhelloworld:title: test document
+    hippo:availability: []
+    hippo:related___pathreference: []
+    hippostd:retainable: false
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-10-01T20:16:19.843-07:00
+    hippostdpubwf:lastModificationDate: 2021-10-01T20:29:45.451-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippotranslation:id: cd788d18-03fe-4ef1-b47d-753ce4348844
+    hippotranslation:locale: en
+    /brxmhelloworld:content:
+      jcr:primaryType: hippostd:html
+      hippostd:content: <p>here is the actual content text</p>
+    /brxmhelloworld:image:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: afb4fc4c-cb92-4195-af5e-05a378926730
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []
+  /test-document[2]:
+    jcr:primaryType: brxmhelloworld:newsdocument
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: cfe0c9c6-2acf-44fb-b944-5503f468d468
+    brxmhelloworld:author: ''
+    brxmhelloworld:date: 2021-10-01T20:16:00-07:00
+    brxmhelloworld:documenttype: news
+    brxmhelloworld:introduction: this is test content intro
+    brxmhelloworld:location: ''
+    brxmhelloworld:source: ''
+    brxmhelloworld:title: test document
+    hippo:availability: [preview]
+    hippo:related___pathreference: []
+    hippostd:retainable: false
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-10-01T20:16:19.843-07:00
+    hippostdpubwf:lastModificationDate: 2021-10-01T20:29:33.430-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippotranslation:id: cd788d18-03fe-4ef1-b47d-753ce4348844
+    hippotranslation:locale: en
+    /brxmhelloworld:content:
+      jcr:primaryType: hippostd:html
+      hippostd:content: <p>here is the actual content text</p>
+    /brxmhelloworld:image:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: afb4fc4c-cb92-4195-af5e-05a378926730
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []
+  /test-document[3]:
+    jcr:primaryType: brxmhelloworld:newsdocument
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 84fccf6f-a6b4-420e-9133-ebdb9c48995b
+    brxmhelloworld:author: ''
+    brxmhelloworld:date: 2021-10-01T20:16:00-07:00
+    brxmhelloworld:documenttype: news
+    brxmhelloworld:introduction: this is test content intro
+    brxmhelloworld:location: ''
+    brxmhelloworld:source: ''
+    brxmhelloworld:title: test document
+    hippo:availability: [live]
+    hippo:related___pathreference: []
+    hippostd:retainable: false
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-10-01T20:16:19.843-07:00
+    hippostdpubwf:lastModificationDate: 2021-10-01T20:29:33.430-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2021-10-01T20:30:02.603-07:00
+    hippotranslation:id: cd788d18-03fe-4ef1-b47d-753ce4348844
+    hippotranslation:locale: en
+    /brxmhelloworld:content:
+      jcr:primaryType: hippostd:html
+      hippostd:content: <p>here is the actual content text</p>
+    /brxmhelloworld:image:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: afb4fc4c-cb92-4195-af5e-05a378926730
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []

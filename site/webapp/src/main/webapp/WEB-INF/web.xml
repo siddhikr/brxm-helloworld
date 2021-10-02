@@ -181,6 +181,11 @@
     </init-param>
   </servlet>
 
+  <servlet>
+    <servlet-name>AssessmentServlet</servlet-name>
+    <servlet-class>com.example.learning.brxm.servlet.AssessmentServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>BinariesServlet</servlet-name>
     <url-pattern>/binaries/*</url-pattern>
@@ -209,6 +214,11 @@
   <servlet-mapping>
     <servlet-name>HstResourceServlet</servlet-name>
     <url-pattern>/resources/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AssessmentServlet</servlet-name>
+    <url-pattern>/assessment/*</url-pattern>
   </servlet-mapping>
 
   <security-constraint>
