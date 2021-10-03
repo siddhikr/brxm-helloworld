@@ -1,0 +1,3 @@
+/hst:hst/hst:configurations/brxmhelloworld/hst:workspace/hst:sitemenus/main/mysearchpage:
+  jcr:primaryType: hst:sitemenuitem
+  hst:referencesitemapitem: mysearchpage

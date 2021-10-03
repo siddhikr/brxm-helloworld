@@ -28,3 +28,12 @@ definitions:
           jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/newslist
           hst:relativecontentpath: ${parent}/${1}
+      /mysearchpage:
+        jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/mysearchpage
+        hst:pagetitle: My Search Page
+        hst:relativecontentpath: mysearchpage
+        /_any_.html:
+          jcr:primaryType: hst:sitemapitem
+          hst:componentconfigurationid: hst:pages/mysearchpage
+          hst:relativecontentpath: ${parent}/${1}

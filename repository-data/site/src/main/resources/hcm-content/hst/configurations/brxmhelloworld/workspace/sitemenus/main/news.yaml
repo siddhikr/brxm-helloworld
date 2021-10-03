@@ -1,3 +1,4 @@
 /hst:hst/hst:configurations/brxmhelloworld/hst:workspace/hst:sitemenus/main/news:
+  .meta:order-before: mysearchpage
   jcr:primaryType: hst:sitemenuitem
   hst:referencesitemapitem: news

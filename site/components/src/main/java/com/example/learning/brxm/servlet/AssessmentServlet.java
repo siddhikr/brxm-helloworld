@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class AssessmentServlet extends HttpServlet {
+
     private static final Logger log = LoggerFactory.getLogger(AssessmentServlet.class);
 
     @Override
@@ -21,12 +23,12 @@ public class AssessmentServlet extends HttpServlet {
         Repository repository =
                 HstServices.getComponentManager().getComponent(Repository.class.getName());
         Session session = null;
+        PrintWriter out = res.getWriter();
         try {
             session = repository.login(new SimpleCredentials("admin", "admin".toCharArray()));
-            Node rootNode = session.getRootNode();
             final Node documentsNode = session.getRootNode().getNode("content/documents");
             long t0 = System.currentTimeMillis();
-            iterateThroughTheJCRTreeUsingGetNodes(documentsNode);
+            iterateThroughTheJCRTreeUsingGetNodes(documentsNode, out);
             log.info("Time taken by iterateThroughTheJCRTreeUsingGetNodes:" + (System.currentTimeMillis() - t0));
             //String xpath = "/jcr:root/content/documents";
             String xpathForOrderByName = "/jcr:root/content/documents//* order by @jcr:name";
@@ -39,6 +41,7 @@ public class AssessmentServlet extends HttpServlet {
             log.info("Time taken by iterateThroughTheJCRTreeUsingQuery for xpathForOrderByScore:" + (System.currentTimeMillis() - t2));
         } catch (RepositoryException e) {
             log.error("Error processing the assessment get request", e);
+            out.println("<div>" + "There was an error processing this search" + "</div>");
         } finally {
             //may be used for a logout if needed
             if (session != null) {
@@ -47,14 +50,15 @@ public class AssessmentServlet extends HttpServlet {
         }
     }
 
-    private void iterateThroughTheJCRTreeUsingGetNodes(Node inputNode) throws RepositoryException {
+    private void iterateThroughTheJCRTreeUsingGetNodes(Node inputNode, PrintWriter out) throws RepositoryException {
         NodeIterator iterator = inputNode.getNodes();
         while (iterator.hasNext()) {
             Node node = iterator.nextNode();
             if (!node.isNodeType("hippofacnav:facetnavigation")) {
                 log.info("node.getName():" + node.getName());
+                out.println("<div>" + node.getName() + "</div>");
             }
-            iterateThroughTheJCRTreeUsingGetNodes(node);
+            iterateThroughTheJCRTreeUsingGetNodes(node, out);
         }
     }
 
