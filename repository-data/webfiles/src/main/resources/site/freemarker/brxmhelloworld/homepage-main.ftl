@@ -9,6 +9,9 @@
       [This text can be edited
       <a href="http://localhost:8080/cms/?1&path=/content/documents/administration/labels/homepage" target="_blank">here</a>.]
     </p>
+    <p>
+    <a href="http://localhost:8080/site/assessment">Click here to list all descendant node names under /content/documents using a normal HTTPServlet</a>
+    </p>
   </#if>
 </div>
 <div>

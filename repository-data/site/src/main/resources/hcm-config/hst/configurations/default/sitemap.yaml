@@ -3,3 +3,6 @@ definitions:
     /hst:hst/hst:configurations/hst:default/hst:sitemap/assessment:
       jcr:primaryType: hst:sitemapitem
       hst:containerresource: true
+    /hst:hst/hst:configurations/hst:default/hst:sitemap/assessmentSearch:
+      jcr:primaryType: hst:sitemapitem
+      hst:containerresource: true
