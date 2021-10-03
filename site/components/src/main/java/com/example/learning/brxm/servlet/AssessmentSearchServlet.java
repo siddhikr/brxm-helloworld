@@ -1,7 +1,9 @@
 package com.example.learning.brxm.servlet;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.jackrabbit.util.Text;
 import org.hippoecm.hst.site.HstServices;
+import org.hippoecm.repository.util.RepoUtils;
 import org.owasp.html.HtmlPolicyBuilder;
 import org.owasp.html.PolicyFactory;
 import org.slf4j.Logger;
@@ -39,6 +41,8 @@ public class AssessmentSearchServlet extends HttpServlet {
                 log.info("Input Search text is:" + searchText[0]);
                 String sanitizedInput = sanitizeInputString(searchText[0]);
                 log.info("Sanitized Search text is:" + sanitizedInput);
+                sanitizedInput = encodeCharactersForJCRQueries(sanitizedInput);
+                log.info("Encoded Search text is:" + sanitizedInput);
                 if (StringUtils.isNotBlank(sanitizedInput)) {
                     // TODO - to check if this does a full text search by default in binary assets
                     String xPathQuery = "//*[jcr:contains(. , '" + sanitizedInput + "')]";
@@ -185,6 +189,16 @@ public class AssessmentSearchServlet extends HttpServlet {
         htmlPolicyBuilder.disallowElements("script");
         PolicyFactory htmlPolicy = htmlPolicyBuilder.toFactory();
         return htmlPolicy.sanitize(input);
+    }
+
+    private String encodeCharactersForJCRQueries(String input){
+        String output = null;
+        if(StringUtils.isNotEmpty(input)){
+            output = Text.escapeIllegalXpathSearchChars(input).replaceAll("'", "''");
+            output = output.replaceAll(":", "_x003A_");
+            output = RepoUtils.encodeXpath(output);
+        }
+        return output;
     }
 
     private String gregCalToString(Calendar calendar) {

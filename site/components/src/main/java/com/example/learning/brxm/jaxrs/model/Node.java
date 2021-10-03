@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Node {
     @XmlAttribute
-    private String id;
+    private String uuid;
 
     @XmlElement
     private String name;
@@ -39,12 +39,12 @@ public class Node {
         this.type = type;
     }
 
-    public String getId() {
-        return id;
+    public String getUuid() {
+        return uuid;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUuId(String uuid) {
+        this.uuid = uuid;
     }
 
     public String getName() {
