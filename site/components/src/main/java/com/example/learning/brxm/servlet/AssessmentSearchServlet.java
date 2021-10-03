@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -41,15 +42,12 @@ public class AssessmentSearchServlet extends HttpServlet {
                 if (StringUtils.isNotBlank(sanitizedInput)) {
                     // TODO - to check if this does a full text search by default in binary assets
                     String xPathQuery = "//*[jcr:contains(. , '" + sanitizedInput + "')]";
-                    // To search content node only
-                    // String xPathQuery = "//*[jcr:contains(contents/@content, '" + sanitizedInput + "')]";
-                    // xpath = "xpath(//*[jcr:contains(contents/@content,'jumps')])";
                     nodes.addAll(getAllNodesThatMatchSearchCriteria(xPathQuery, session));
                 }
             }
             if (!nodes.isEmpty()) {
-                for (String node : nodes) {
-                    out.println("<div>" + node + "</div>");
+                for (String nodeStr : nodes) {
+                    out.println("<div>" + nodeStr + "</div>");
                 }
             } else {
                 out.println("<div>" + "No results found" + "</div>");
@@ -72,7 +70,7 @@ public class AssessmentSearchServlet extends HttpServlet {
         while (nodes.hasNext()) {
             Node node = nodes.nextNode();
             if (!node.isNodeType("hippofacnav:facetnavigation")) {
-                String nodeInfo = "nodeName:" + node.getName();
+                String nodeInfo = "nodeNameAndPath:" + node.getPath() + "/" + node.getName();
                 PropertyIterator nodeProperties = node.getProperties();
                 while (nodeProperties.hasNext()) {
                     Property property = nodeProperties.nextProperty();
@@ -80,9 +78,9 @@ public class AssessmentSearchServlet extends HttpServlet {
                         String propertyValue = getValue(property).toString();
                         //TODO - To check how to write recursive property node reference calls in terms of referenced nodes
                         nodeInfo = nodeInfo + ":::" + property.getName() + "---" + propertyValue;
-                        results.add(nodeInfo);
                     }
                 }
+                results.add(nodeInfo);
             }
         }
         return results;
@@ -109,7 +107,7 @@ public class AssessmentSearchServlet extends HttpServlet {
                 case PropertyType.LONG:
                     return property.getLong();
                 case PropertyType.DATE:
-                    return property.getDate();
+                    return gregCalToString(property.getDate());
                 case PropertyType.BOOLEAN:
                     return property.getBoolean();
 //                case PropertyType.REFERENCE:
@@ -158,7 +156,7 @@ public class AssessmentSearchServlet extends HttpServlet {
                         object = value.getLong();
                         break;
                     case PropertyType.DATE:
-                        object = value.getDate();
+                        object = gregCalToString(value.getDate());
                         break;
                     case PropertyType.BOOLEAN:
                         object = value.getBoolean();
@@ -189,4 +187,8 @@ public class AssessmentSearchServlet extends HttpServlet {
         return htmlPolicy.sanitize(input);
     }
 
+    private String gregCalToString(Calendar calendar) {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyy-MM-dd HH:mm:ss.SSS");
+        return formatter.format(calendar.getTime());
+    }
 }
