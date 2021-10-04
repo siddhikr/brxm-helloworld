@@ -65,6 +65,7 @@
   </bean>
   
   <!-- Custom JAX-RS REST Plain Resource Providers to be overriden. -->
+  <!-- Scenario 2.5 - JAX-RS CXF REST API Endpoint-->
   <bean id="customRestPlainResourceProviders" class="org.springframework.beans.factory.config.ListFactoryBean">
     <property name="sourceList">
       <list>

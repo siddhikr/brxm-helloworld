@@ -221,11 +221,13 @@
     <url-pattern>/resources/*</url-pattern>
   </servlet-mapping>
 
+  <!-- Adding mapping for scenario 2.1 of assessment -->
   <servlet-mapping>
     <servlet-name>AssessmentServlet</servlet-name>
     <url-pattern>/assessment/*</url-pattern>
   </servlet-mapping>
 
+  <!-- Adding mapping for scenario 2.4 of assessment -->
   <servlet-mapping>
     <servlet-name>AssessmentSearchServlet</servlet-name>
     <url-pattern>/assessmentSearch/*</url-pattern>
