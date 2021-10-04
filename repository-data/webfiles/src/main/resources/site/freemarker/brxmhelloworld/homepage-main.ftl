@@ -13,7 +13,7 @@
     <a href="http://localhost:8080/site/assessment">Click here to list all descendant node names under /content/documents using a normal HTTPServlet</a>
     </p>
     <p>
-    <a href="http://localhost:8080/site/jaxrs-restservices/nodes/">Click here to get all nodes using JAXRS</a>
+    <a href="http://localhost:8080/site/mynodeapi/nodes/">Click here to get all nodes in the JCR using CXF JAX-RS</a>
     </p>
 </p>
 
