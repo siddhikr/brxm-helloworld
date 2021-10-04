@@ -281,3 +281,67 @@
             hippo:facets: []
             hippo:modes: []
             hippo:values: []
+      /test-item90190:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 6d1d0089-2325-4700-a940-09ba808e1342
+        /test-item90190[1]:
+          jcr:primaryType: brxmhelloworld:newsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: b88c95b9-e098-4da3-af88-6c6624a82f86
+          brxmhelloworld:author: ''
+          brxmhelloworld:date: 2021-10-03T23:13:00-07:00
+          brxmhelloworld:documenttype: news
+          brxmhelloworld:introduction: ''
+          brxmhelloworld:location: ''
+          brxmhelloworld:source: ''
+          brxmhelloworld:title: test-copy-90190
+          hippo:availability: []
+          hippo:related___pathreference: []
+          hippostd:retainable: false
+          hippostd:state: draft
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2021-10-03T23:13:10.416-07:00
+          hippostdpubwf:lastModificationDate: 2021-10-03T23:13:10.418-07:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 3e729bd9-2cb0-4f73-b6cb-0d0c6055a486
+          hippotranslation:locale: en
+          /brxmhelloworld:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: ''
+          /brxmhelloworld:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /test-item90190[2]:
+          jcr:primaryType: brxmhelloworld:newsdocument
+          jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+          jcr:uuid: 7cc1b276-875a-4a00-ac0e-e25eb90e5788
+          brxmhelloworld:author: ''
+          brxmhelloworld:date: 2021-10-03T23:13:00-07:00
+          brxmhelloworld:documenttype: news
+          brxmhelloworld:introduction: ''
+          brxmhelloworld:location: ''
+          brxmhelloworld:source: ''
+          brxmhelloworld:title: test-copy-90190
+          hippo:availability: [preview]
+          hippo:related___pathreference: []
+          hippostd:retainable: false
+          hippostd:state: unpublished
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2021-10-03T23:13:10.416-07:00
+          hippostdpubwf:lastModificationDate: 2021-10-03T23:13:34.954-07:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 3e729bd9-2cb0-4f73-b6cb-0d0c6055a486
+          hippotranslation:locale: en
+          /brxmhelloworld:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: ''
+          /brxmhelloworld:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
